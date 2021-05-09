@@ -1,6 +1,7 @@
 package com.ksale.calculatorapp.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.material.Colors
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
@@ -27,11 +28,12 @@ private val LightColorPalette = lightColors(
     */
 )
 
+fun Colors.lightTheme() {
+
+}
+
 @Composable
-fun CalculatorAppTheme(
-    darkTheme: Boolean = isSystemInDarkTheme(),
-    content: @Composable() () -> Unit
-) {
+fun CalculatorTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable() () -> Unit) {
     val colors = if (darkTheme) {
         DarkColorPalette
     } else {
